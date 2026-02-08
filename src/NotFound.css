@@ -1,0 +1,55 @@
+.Gif{
+  width: 30%;
+  height: 10%;
+  margin-left: 500px;
+}
+.h1Number1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px white;
+}
+.Div1{
+    border: solid black 1px;
+    background-color: #01647d;;
+    position: absolute;
+    margin-left: 600px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.Div2{
+    border: solid black 1px;
+    background-color: #01647d;;
+    position: absolute;
+    margin-left: 600px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: -275px;
+    margin-left: 70px;
+    box-shadow: 1px 1px 10px black;
+}
+.Div3{
+    border: solid black 1px;
+    background-color: #01647d;;
+    position: absolute;
+    margin-left: 600px;
+    border-radius: 30px;
+    padding: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -270px;
+    margin-left: 1320px;
+    box-shadow: 1px 1px 10px black;
+}
+.Button{
+  border: solid black 1px;
+  border-radius: 30px;
+  margin-left: 90px;
+  box-shadow: 1px 1px 10px black;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 10px black;
+}

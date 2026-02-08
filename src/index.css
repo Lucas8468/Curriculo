@@ -1,0 +1,252 @@
+/* Media Queries */
+body{
+  background-color: white,
+}
+/* Tablets (até 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        background-color: lightgray;
+    }
+}
+
+/* Desktops (telas maiores que 1024px) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+        background-color: white;
+    }
+}
+
+/* Estilizando o color dos links */
+a:link {
+  color:#01647d;
+}
+a:visited{
+ color: #01647d;
+}
+
+/* Estilizando o Botão do Menu das páginas */
+.Menu{
+  height: 25px;
+
+}
+.Menu:hover{
+  transform: rotateY(360deg);
+  height: 25px;
+  transition: 1s;
+}
+.buttonMenu{
+  opacity: 0px;
+  border: solid black 0px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Estilizando a NavBar das páginas */
+.NavbarPosition2{
+  background-color: #01647d;
+  border: solid black 1px;
+  border-radius: 30px;
+  padding: 25px;
+  display: flex;
+  box-shadow: 1px 1px 30px  black;
+  overflow-x: scroll;
+}
+.NavbarPosition1{
+  background-color: #0f313b;
+  border: solid white 1px;
+  border-radius: 30px;
+  padding: 25px;
+  display: flex;
+  box-shadow: 1px 1px 30px  black;
+  overflow-x: scroll;
+}
+
+/* Estilizando a barra de rolagem da NavBar */
+.NavbarPosition1::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.NavbarPosition2::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+
+/* Estilizando O background Da página com a Tag Body */
+.Back1{
+  background-color: #16171a;
+}
+.Back2{
+  background-color: white;
+}
+
+/* Estilizando O Menu das páginas */
+.NavbarVertical1{
+  border-radius: 30px;
+  position: absolute;
+  padding: 30px;
+  background-color: #01647d;
+  border: solid black 1px;
+  display: inline-flex;
+}
+.NavbarVertical2{
+  border: none;
+  position: none;
+  padding: none;
+  background-color: #0f313b;
+}
+
+/* Estilizando o botão de tradução da página */
+.ButtonTradutor{
+  border-radius: 30px;
+  font-weight: bold;
+  border: solid black 1px;
+  cursor: pointer;
+  text-shadow: 1px 1px 18px black;
+  padding: 20px;
+  margin-top: 80px;
+  box-shadow: 1px 1px 10px  black;
+  margin-left:-140px;
+}
+
+/* Estilizando O botão de alterar o Modo Noturno/Diurno da página */
+.ButtonModos{
+  border-radius: 30px;
+  font-weight: bold;
+  border: solid black 1px;
+  cursor: pointer;
+  text-shadow: 1px 1px 18px black;
+  padding: 20px;
+  margin-top: 80px;
+  box-shadow: 1px 1px 10px  black;
+  margin-left: 10px;
+
+}
+
+/* Estilizando os Buttons da NavBar das Páginas */
+.ButtonNavBar1{
+  padding: 20px;
+  border: black solid 1px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px  black;
+  cursor: pointer;
+  text-shadow: 1px 1px 18px black;
+  font-weight: bold;
+}
+.ButtonNavBar1:hover{
+  color: #01647d;
+  transform: scale(1.2);
+  transition: 1s;
+}
+.ButtonNavBar2{
+  border: black solid 1px;
+  border-radius: 30px;
+  margin-left: 30px;
+  box-shadow: 1px 1px 7px  black;
+  cursor: pointer;
+  padding: 20px;
+  text-shadow: 1px 1px 18px black;
+  font-weight: bold;
+}
+.ButtonNavBar2:hover{
+  color: #01647d;
+  transform: scale(1.2);
+  transition: 1s;
+}
+.ButtonNavBar3{
+  border: black solid 1px;
+  border-radius: 30px;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 7px  black;
+  padding: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px 18px black;
+  font-weight: bold;
+}
+.ButtonNavBar3:hover{
+  color: #01647d;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* Estilizando os textos das páginas */
+.text1Diurno{
+  text-shadow: 1px 1px 20px black;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+.text1Noturno{
+  text-shadow: 1px 1px 20px black;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+.text2Diurno{
+  font-weight: bold;
+  text-shadow: 1px 1px 18px black;
+}
+.text2Noturno{
+  font-weight: bold;
+  text-shadow: 1px 1px 18px black;
+  color: white;
+}
+.text4Noturno{
+  text-shadow: 1px 1px 20px black;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+.text4Diurno{
+text-shadow: 1px 1px 20px black;
+  color: #01647d;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+/* Estilizando os Títulos das páginas */
+.h1Diurno{
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #01647d;
+}
+.h1Noturno{
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.h1ConfigNoturno{
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.h1ConfigDiurno{
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/* Estilizando as Sessões das páginas */
+.ul1Diurno{
+  border: solid black 1px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px black;
+  padding: 40px;
+}
+.ul1Noturno{
+  border: solid white 1px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px black;
+  padding: 40px;
+  background-color: #0f313b;
+}
+
