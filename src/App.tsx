@@ -6,7 +6,7 @@ import SoftSkills from './SoftSkills'
 import Experiencias from './Experiências'
 import Academico from './academico'
 import CursosBootcamps from './CursosBootcamps'
-import Objetivo from './assets/Objetivo'
+import Objetivo from './Objetivo'
 import Index from './Index'
 import NotFound from './NotFound'
 
@@ -16,7 +16,7 @@ export default function App(){
     <>
       <BrowserRouter>
         <Routes>
-            <Route path='/Index' element={<Index/>}/>
+            <Route path='/' element={<Index/>}/>
             <Route path='/IF' element={<IF/>}/>
             <Route path='/HardSkills' element={<HardSkills/>}/>
             <Route path='/SoftSkills' element={<SoftSkills/>}/>

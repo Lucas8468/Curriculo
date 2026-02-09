@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 {/* Importando o css para a aplicação */}
 import './index.css'
 
+import { Link } from 'react-router-dom';
+
 {/* Componente que contém os arquivos principais da Aplicação */}
 export default function Index(){
 
@@ -53,14 +55,34 @@ export default function Index(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-        <a href="http://localhost:5173/Index"><button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir? 'Complementar':'All'}</button></a>
-        <a href="http://localhost:5173/if"><button  accessKey='I' className='ButtonNavBar2' type='button'>{Traduzir?'Informações essenciais':'essential information'}</button></a>
-        <a href="http://localhost:5173/HardSkills"><button accessKey='H' className='ButtonNavBar3' type='button'>Hard Skills</button></a>
-        <a href="http://localhost:5173/SoftSkills"><button accessKey='S' className='ButtonNavBar3' type='button'>Soft Skills</button></a>
-        <a href="http://localhost:5173/experiencias"><button accessKey='L' className="ButtonNavBar3" type="button">{Traduzir?'Experiências':'Experiences'}</button></a>
-        <a href="http://localhost:5173/Academico"><button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir?'Acadêmico':'Academic'}</button></a>
-        <a href="http://localhost:5173/CursosBootcamps"><button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir?'Cursos Bootcamps':'Bootcamp Courses'}</button></a>
-        <a href="http://localhost:5173/Objetivo"><button accessKey='O' className='ButtonNavBar3' type='button'>{Traduzir?'Objetivo':'Objective'}</button></a> 
+       <Link to="/">
+           <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
+        </Link>
+        <Link to="/if">
+          <button accessKey='I' className='ButtonNavBar2' type='button'>{Traduzir ? 'Informações essenciais' : 'essential information'}</button>
+        </Link>
+        <Link to="/HardSkills">
+          <button accessKey='H' className='ButtonNavBar3' type='button'>Hard Skills</button>
+        </Link>
+        <Link to="/SoftSkills">
+          <button accessKey='S' className='ButtonNavBar3' type='button'>Soft Skills</button>
+        </Link>
+        <Link to="/experiencias">
+          <button accessKey='L' className="ButtonNavBar3" type="button">{Traduzir ? 'Experiências' : 'Experiences'}
+          </button>
+        </Link>
+        <Link to="/Academico">
+         <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
+        </button>
+        </Link>
+        <Link to="/CursosBootcamps">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+          </button>
+        </Link>
+        <Link to="/Objetivo">
+          <button accessKey='O' className='ButtonNavBar3' type='button'>{Traduzir ? 'Objetivo' : 'Objective'}
+          </button>
+        </Link>
       </nav>
 
       <main>
