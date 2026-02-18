@@ -44,7 +44,7 @@ export default function HardSkills(){
       {/* Div que contém o Menu de configurações */}  
       <div>
         <button style={{border: Modos? 'solid white 1px': 'solid black 1px'}} className="buttonMenu" onClick={()=>setMenu(!Menu)}>
-          <img  className="Menu" src="../Recursos-externos/menu-hamburguer.png" alt="image" />
+           <img className="Menu" src="/menu-hamburguer.png" alt="Menu Hamburguer"/>
         </button>
         <div style={{backgroundColor: Modos? '#0f313b':'#01647d'}} className={Menu? 'NavbarVertical1':'NavbarVertical2'}>
             {Menu?<h1 className={Modos? 'h1ConfigNoturno':'h1ConfigDiurno'}>{Traduzir? 'Configurações': 'Settings'}</h1>: null}
