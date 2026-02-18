@@ -7,7 +7,7 @@ import './index.css'
 import { Link } from 'react-router-dom';
 
 {/* Componente que contém os arquivos principais da Aplicação */}
-export default function Index(){
+export default function SoftSkills(){
 
 {/* Utilizando UseState para Aplicar a Tradução no estado do elemento */}
   const [Traduzir, setTraduzir]=useState(()=>{
@@ -32,8 +32,7 @@ export default function Index(){
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
-          document.title = Traduzir? 'Complementar':'All'
-          
+          document.title = 'SoftSkills'          
       })
     return(
         <>

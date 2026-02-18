@@ -7,7 +7,7 @@ import './index.css'
 import { Link } from 'react-router-dom';
 
 {/* Componente que contém os arquivos principais da Aplicação */}
-export default function Index(){
+export default function Experiencias(){
 
 {/* Utilizando UseState para Aplicar a Tradução no estado do elemento */}
   const [Traduzir, setTraduzir]=useState(()=>{
@@ -32,7 +32,7 @@ export default function Index(){
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
-          document.title = Traduzir? 'Complementar':'All'
+          document.title = Traduzir? 'Experiências':'Experiences'
           
       })
     return(
@@ -43,7 +43,7 @@ export default function Index(){
       {/* Div que contém o Menu de configurações */}  
       <div>
         <button style={{border: Modos? 'solid white 1px': 'solid black 1px'}} className="buttonMenu" onClick={()=>setMenu(!Menu)}>
-          <img  className="Menu" src="../Recursos-externos/menu-hamburguer.png" alt="image" />
+          <img className="Menu" src="/menu-hamburguer.png" alt="Menu Hamburguer"/>
         </button>
         <div style={{backgroundColor: Modos? '#0f313b':'#01647d'}} className={Menu? 'NavbarVertical1':'NavbarVertical2'}>
             {Menu?<h1 className={Modos? 'h1ConfigNoturno':'h1ConfigDiurno'}>{Traduzir? 'Configurações': 'Settings'}</h1>: null}
@@ -86,42 +86,25 @@ export default function Index(){
 
         <main>
          {/* Sessão que fala sobre os cursos técnicos que o candidato possue */}
-        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Bootcamps':'Bootcamp courses'}</h1>
+        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Experiências':'Experiences'}</h1>
         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Informática Básica':'Basic Computer Skills'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Micromaker':'Institution: Micromaker'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Local: Carapicuíba': 'Location: Carapicuíba'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Controlador de acesso/portaria - carga horaria: 08 horas - 11/2023':'Access control/security guard - working hours: 8 hours - 11/2023'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Corvig':'Institution: Corvig'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Local: Osasco': 'Location: Osasco'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Operador de monitoramento CFTV/alarmes - carga horária: 04 horas - 11/2023':'CCTV/Alarm Monitoring Operator - Workload: 4 hours - 11/2023'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Corvig':'Institution: Corvig'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Local: Osasco': 'Location: Osasco'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Auxiliar administrativo':'Administrative Assistant'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>HTML</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>CSS</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
-        <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Power BI</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>Dunamis</li>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Controlador de Acesso':'Job title: Acess Controller'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Postos: Hospitais particulares - Carapícuiba e osasco':'Jobs held: Private hospitals - Carapicuíba and Osasco'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 4 Meses': 'Duration: 4 Months'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36 ':'Scale: 12x36'}</p>
+          <hr />
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>Verzani & Sandrini</li>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Porteiro':'Job Title: Doorman'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Postos trabalhados: Condomínio empresarial, telemarketing e shopping': 'Job positions: Business park, telemarketing, and shopping mall.'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Duração: 3 Meses': 'Duration: 3 Months'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
+          <hr />
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>Espartaco</li>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Posto de trabalho: Condomínio empresarial - Barueri ': 'Job location: Business park - Barueri'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Cargo: Controlador de acesso': 'Job Title: Acess Controller'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 2 Meses': 'Duration: 2 Months'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
         </ul>
         </main>
         </body>

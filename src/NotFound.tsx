@@ -1,11 +1,14 @@
-import Gif from '../Recursos-externos/u_mey4kjj5ww-angry-2498.gif'
+import { useEffect } from 'react'
 import './NotFound.css'
 
 export default function NotFound(){
+    useEffect(()=>{
+        document.title = 'NotFound'
+    })
     return(
         <>
         <figure >
-            <img className='Gif' src={Gif} alt="Página não encontrada" />
+             <img src="/u_mey4kjj5ww-angry-2498.gif" alt="Angry GIF"/>
         </figure>
         <main>
             <div className='Div1'>

@@ -7,7 +7,7 @@ import './index.css'
 import { Link } from 'react-router-dom';
 
 {/* Componente que contém os arquivos principais da Aplicação */}
-export default function Index(){
+export default function IF(){
 
 {/* Utilizando UseState para Aplicar a Tradução no estado do elemento */}
   const [Traduzir, setTraduzir]=useState(()=>{

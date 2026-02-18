@@ -66,7 +66,7 @@ export default function Index(){
         <Link to="/SoftSkills">
           <button accessKey='S' className='ButtonNavBar3' type='button'>Soft Skills</button>
         </Link>
-        <Link to="/experiencias">
+        <Link to="/Experiencias">
           <button accessKey='L' className="ButtonNavBar3" type="button">{Traduzir ? 'Experiências' : 'Experiences'}
           </button>
         </Link>
