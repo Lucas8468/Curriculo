@@ -53,7 +53,7 @@ export default function SoftSkills(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-         <Link to="/">
+       <Link to="/">
            <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
         </Link>
         <Link to="/if">
@@ -73,8 +73,8 @@ export default function SoftSkills(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">

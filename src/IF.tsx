@@ -32,7 +32,7 @@ export default function IF(){
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
-          document.title = Traduzir? 'Complementar':'All'
+          document.title = Traduzir? 'Informações essencias':'essential information'
           
       })
   return(
@@ -54,7 +54,7 @@ export default function IF(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-        <Link to="/">
+    <Link to="/">
            <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
         </Link>
         <Link to="/if">
@@ -74,8 +74,8 @@ export default function IF(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">
@@ -93,6 +93,7 @@ export default function IF(){
           <li className={Modos? 'text1Noturno':'text1Diurno'}>Email: lucasbrandaods080@gmail.com</li>
           <li className={Modos? 'text1Noturno':'text1Diurno'}><a href="https://github.com/Lucas8468" target='_blank'>Github: Lucas8468</a> </li>
           <li className={Modos? 'text1Noturno':'text1Diurno'}><a href="https://www.linkedin.com/in/lucas-brand%C3%A3o-da-silva-baa82b367?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtV56LlXBRjSlbl9BD2u4sA%3D%3D" target='_blank'>Linkedin: Lucas Brandão da Silva</a></li>
+          <li className={Modos? 'text1Noturno': 'text1Diurno'}>CID: F42, F41-2, F95.2</li>
         </ul>
       </main>
       </body>

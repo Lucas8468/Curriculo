@@ -55,7 +55,7 @@ export default function HardSkills(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-       <Link to="/">
+     <Link to="/">
            <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
         </Link>
         <Link to="/if">
@@ -75,8 +75,8 @@ export default function HardSkills(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">
@@ -90,13 +90,13 @@ export default function HardSkills(){
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>Hard Skills</h1>
           <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Avançado':'Advanced'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, Node.js, Vite.js, Express.js, HTML, CSS</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, Express.js, Windows, HTML, CSS</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Intermediário':'Intermediary'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, React.js, React Router DOM, Mysql, Git, Github, Excel, Powerpoint e Word</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, React Router DOM, Node.js, Mysql, Git, Github, Excel Powerpoint e Word</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Básico':'Basic'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, PHP, Python, Next.js</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, Linux, Python</p>
           </ul>
       </main>
       </body>

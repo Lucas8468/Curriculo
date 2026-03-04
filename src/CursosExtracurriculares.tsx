@@ -7,7 +7,7 @@ import './index.css'
 import { Link } from 'react-router-dom';
 
 {/* Componente que contém os arquivos principais da Aplicação */}
-export default function CursosBootcamps(){
+export default function CursosExtracurriculares(){
 
 {/* Utilizando UseState para Aplicar a Tradução no estado do elemento */}
   const [Traduzir, setTraduzir]=useState(()=>{
@@ -32,7 +32,7 @@ export default function CursosBootcamps(){
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
-          document.title = Traduzir? 'Cursos Bootcamps':'Bootcamp Courses'
+          document.title = Traduzir? 'Cursos Extracurrículares':'Extracurricular Courses'
           
       })
     return(
@@ -74,8 +74,8 @@ export default function CursosBootcamps(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">
@@ -86,7 +86,7 @@ export default function CursosBootcamps(){
       
        {/* Sessão que fala sobre os cursos técnicos que o candidato possue */}
       <main>
-        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Bootcamps':'Bootcamp courses'}</h1>
+        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Extracurrículares':'Extracurricular Courses'}</h1>
         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Informática Básica':'Basic Computer Skills'}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Micromaker':'Institution: Micromaker'}</p>

@@ -54,7 +54,7 @@ export default function Experiencias(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-        <Link to="/">
+     <Link to="/">
            <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
         </Link>
         <Link to="/if">
@@ -74,8 +74,8 @@ export default function Experiencias(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">
@@ -91,20 +91,8 @@ export default function Experiencias(){
           <li className={Modos? 'text4Noturno':'text4Diurno'}>Dunamis</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Controlador de Acesso':'Job title: Acess Controller'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Postos: Hospitais particulares - Carapícuiba e osasco':'Jobs held: Private hospitals - Carapicuíba and Osasco'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 4 Meses': 'Duration: 4 Months'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 5 Meses': 'Duration: 4 Months'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36 ':'Scale: 12x36'}</p>
-          <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Verzani & Sandrini</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Porteiro':'Job Title: Doorman'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Postos trabalhados: Condomínio empresarial, telemarketing e shopping': 'Job positions: Business park, telemarketing, and shopping mall.'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Duração: 3 Meses': 'Duration: 3 Months'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
-          <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Espartaco</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Posto de trabalho: Condomínio empresarial - Barueri ': 'Job location: Business park - Barueri'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Cargo: Controlador de acesso': 'Job Title: Acess Controller'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 2 Meses': 'Duration: 2 Months'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
         </ul>
         </main>
         </body>

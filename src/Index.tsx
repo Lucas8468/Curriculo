@@ -54,7 +54,7 @@ export default function Index(){
 
       {/* Navbar para filtrar pela sessão desejada do currículo */}
       <nav className={Modos?'NavbarPosition1':'NavbarPosition2'}>
-        <Link to="/">
+    <Link to="/">
            <button accessKey='C' className='ButtonNavBar1' type="button">{Traduzir ? 'Complementar' : 'All'}</button>
         </Link>
         <Link to="/if">
@@ -66,7 +66,7 @@ export default function Index(){
         <Link to="/SoftSkills">
           <button accessKey='S' className='ButtonNavBar3' type='button'>Soft Skills</button>
         </Link>
-        <Link to="/Experiencias">
+        <Link to="/experiencias">
           <button accessKey='L' className="ButtonNavBar3" type="button">{Traduzir ? 'Experiências' : 'Experiences'}
           </button>
         </Link>
@@ -74,8 +74,8 @@ export default function Index(){
          <button accessKey='A' className='ButtonNavBar3' type='button'>{Traduzir ? 'Acadêmico' : 'Academic'}
         </button>
         </Link>
-        <Link to="/CursosBootcamps">
-          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Bootcamps' : 'Bootcamp Courses'}
+        <Link to="/CursosExtracurriculares">
+          <button accessKey='B' className='ButtonNavBar3' type='button'>{Traduzir ? 'Cursos Extracurrículares' : 'Extracurricular Courses'}
           </button>
         </Link>
         <Link to="/Objetivo">
@@ -95,6 +95,7 @@ export default function Index(){
           <li className={Modos? 'text1Noturno':'text1Diurno'}>Email: lucasbrandaods080@gmail.com</li>
           <li className={Modos? 'text1Noturno':'text1Diurno'}><a href="https://github.com/Lucas8468" target='_blank'>Github: Lucas8468</a> </li>
           <li className={Modos? 'text1Noturno':'text1Diurno'}><a href="https://www.linkedin.com/in/lucas-brand%C3%A3o-da-silva-baa82b367?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtV56LlXBRjSlbl9BD2u4sA%3D%3D" target='_blank'>Linkedin: Lucas Brandão da Silva</a></li>
+          <li className={Modos? 'text1Noturno': 'text1Diurno'}>CID: F42, F41-2, F95.2</li>
         </ul>
         <hr />
 
@@ -102,14 +103,14 @@ export default function Index(){
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>Hard Skills</h1>
           <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Avançado':'Advanced'}</li>
-             <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Windows, Vite.js, Express.js, HTML, CSS</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, Express.js, Windows, HTML, CSS</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Intermediário':'Intermediary'}</li>
-              <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, Node.js, React Router DOM, Mysql, Git, Github, Excel, Powerpoint e Word</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, React Router DOM, Node.js, Mysql, Git, Github, Excel Powerpoint e Word</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Básico':'Basic'}</li>
-             <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, PHP, Linux, Python, Next.js</p>
-          </ul>      
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, Linux, Python</p>
+          </ul> 
         <hr />
 
         {/* Sessão que contem as habilidades comportamentais */}
@@ -123,34 +124,22 @@ export default function Index(){
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Experiências':'Experiences'}</h1>
         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>Dunamis</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Controlador de Acesso':'Job title: Acess Controller'}</p>
+           <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Controlador de Acesso':'Job title: Acess Controller'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Postos: Hospitais particulares - Carapícuiba e osasco':'Jobs held: Private hospitals - Carapicuíba and Osasco'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 4 Meses': 'Duration: 4 Months'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 5 Meses': 'Duration: 4 Months'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36 ':'Scale: 12x36'}</p>
-          <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Verzani & Sandrini</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Cargo: Porteiro':'Job Title: Doorman'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Postos trabalhados: Condomínio empresarial, telemarketing e shopping': 'Job positions: Business park, telemarketing, and shopping mall.'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Duração: 3 Meses': 'Duration: 3 Months'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
-          <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Espartaco</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Posto de trabalho: Condomínio empresarial - Barueri ': 'Job location: Business park - Barueri'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Cargo: Controlador de acesso': 'Job Title: Acess Controller'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Duração: 2 Meses': 'Duration: 2 Months'}</p>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Escala: 12X36': 'Scale: 12X36'}</p>
         </ul>
         <hr />
 
         {/* Sessão que mostra a carreira acadêmica do candidato */}
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Acadêmico':'Academic'}</h1>
         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
-          <li className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Ensino Superior':'higher education'}</li>
+         <li className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Ensino Superior - 3º Semestre':'higher education - 3rd semester'}</li>
         </ul>
         <hr />
 
         {/* Sessão que fala sobre os cursos técnicos que o candidato possue */}
-        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Bootcamps':'Bootcamp courses'}</h1>
+        <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Extracurrículares':'extracurricular courses'}</h1>
         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Informática Básica':'Basic Computer Skills'}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Micromaker':'Institution: Micromaker'}</p>
@@ -198,7 +187,7 @@ export default function Index(){
 
             My focus is to specialize in web development, being a full-stack developer, but also having knowledge of application creation.`}</p>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Cargo Pretendido':'Desired Position'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Desenvolvedor Web':'Web developer'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Estágio em Ti (Podendo ser incluído em cotas PCD)':'IT Internship (May be included in quotas for people with disabilities)'}</p>
         </ul>
       </main>
     </body>  

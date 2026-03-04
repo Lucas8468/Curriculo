@@ -5,10 +5,10 @@ import HardSkills from './HardSkills'
 import SoftSkills from './SoftSkills'
 import Experiencias from './Experiências'
 import Academico from './academico'
-import CursosBootcamps from './CursosBootcamps'
 import Objetivo from './Objetivo'
 import Index from './Index'
 import NotFound from './NotFound'
+import CursosExtracurriculares from './CursosExtracurriculares'
 
 
 export default function App(){
@@ -23,7 +23,7 @@ export default function App(){
             <Route path='/Experiencias' element={<Experiencias/>}/>
             <Route path='/Academico' element={<Academico/>}/>
             <Route path='/Objetivo' element={<Objetivo/>}/>
-            <Route path='/CursosBootcamps' element={<CursosBootcamps/>}/>
+            <Route path='/CursosExtracurriculares' element={<CursosExtracurriculares/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
