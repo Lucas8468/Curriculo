@@ -27,7 +27,7 @@ export default function HardSkills(){
     return save3 ? JSON.parse(save3) : true
   })
 
-  const [Bolha, SetBolha]=useState(()=>{
+  const [Bolha, _SetBolha] = useState(() => {
     const save4 = localStorage.getItem('Key 5')
     return save4 ? JSON.parse(save4) : true
   })
