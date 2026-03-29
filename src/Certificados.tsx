@@ -33,24 +33,24 @@ export default function Certificados(){
         </div>    
         <h1 className={Modos?'h1FotosDiurno':'h1FotosNoturno'}>Alura AWS</h1>
       </div>
-        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="\public\Captura de tela 2026-03-27 052953.png" alt=""/>
-        {<img className={Modos? 'ImgFotosDiurno3':'ImgFotosNoturno3'} src="\public\Captura de tela 2026-03-29 064259.png" alt="" />}
+        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="/Captura de tela 2026-03-27 052953.png" alt=""/>
+        {<img className={Modos? 'ImgFotosDiurno3':'ImgFotosNoturno3'} src="/Captura de tela 2026-03-29 064259.png" alt="" />}
         <hr />
         <h1 className={Modos?'h1FotosDiurno':'h1FotosNoturno'}>Power BI</h1>
-        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="\public\Captura de tela 2026-03-29 073240.png" alt=""/>
-        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="\public\Captura de tela 2026-03-29 073449.png" alt="" />}
+        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="/Captura de tela 2026-03-29 073240.png" alt=""/>
+        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 073449.png" alt="" />}
         <hr />
         <h1 className={Modos?'h2FotosDiurno':'h2FotosNoturno'}>CSS (Cascading Style Sheets)</h1>
-        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="\public\Captura de tela 2026-03-29 075304.png" alt=""/>
-        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="\public\Captura de tela 2026-03-29 075312.png" alt="" />}
+        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="/Captura de tela 2026-03-29 075304.png" alt=""/>
+        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 075312.png" alt="" />}
         <hr />
         <h1 className={Modos?'h3FotosDiurno':'h3FotosNoturno'}>HTML</h1>
-        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="\public\Captura de tela 2026-03-29 080103.png" alt=""/>
-        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="\public\Captura de tela 2026-03-29 080112.png" alt="" />}
+        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="/Captura de tela 2026-03-29 080103.png" alt=""/>
+        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 080112.png" alt="" />}
         <hr />
         <h1 className={Modos?'h2FotosDiurno':'h2FotosNoturno'}>Auxiliar Administrativo</h1>
-        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="\public\Captura de tela 2026-03-29 080642.png" alt=""/>
-        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="\public\Captura de tela 2026-03-29 080649.png" alt="" />}
+        <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} onClick={()=>setTraduzir(!Traduzir)} src="/Captura de tela 2026-03-29 080642.png" alt=""/>
+        {<img className={Modos? 'ImgFotosDiurno2':'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 080649.png" alt="" />}
         </>
     )
 }
