@@ -27,12 +27,18 @@ export default function HardSkills(){
     return save3 ? JSON.parse(save3) : true
   })
 
+  const [Bolha, SetBolha]=useState(()=>{
+    const save4 = localStorage.getItem('Key 5')
+    return save4 ? JSON.parse(save4) : true
+  })
+
 {/* Utilizando o UseEffect para configurar o localStorage e o Tittle da página */}
       useEffect(()=>{
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
-          document.title = 'HardSkills'
+          localStorage.setItem('key 5', JSON.stringify(Bolha))
+          document.title = Traduzir? 'Complementar':'All'
           
       })
     return(
@@ -88,16 +94,16 @@ export default function HardSkills(){
       <main>
         {/* Sessão que contém as habilidades técnicas */}
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>Hard Skills</h1>
-          <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
+           <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Avançado':'Advanced'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, Express.js, Windows, HTML, CSS</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, GitHub Express.js, Windows, HTML e CSS</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Intermediário':'Intermediary'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, React Router DOM, Node.js, Mysql, Git, Github, Excel Powerpoint e Word</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, Filmora, Linux (Ubuntu e Fedora), Electron.js, Next.js, Nextron.js, React Router DOM, Node.js, Mysql, Git, Excel, Powerpoint e Word</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Básico':'Basic'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, Linux, Python</p>
-          </ul>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, English, AWS DATA LAKE, Neon Serverless e Python</p>
+          </ul> 
       </main>
       </body>
         </>

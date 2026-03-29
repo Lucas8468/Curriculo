@@ -27,11 +27,17 @@ export default function Index(){
     return save3 ? JSON.parse(save3) : true
   })
 
+  const [Bolha, SetBolha]=useState(()=>{
+    const save4 = localStorage.getItem('Key 5')
+    return save4 ? JSON.parse(save4) : true
+  })
+
 {/* Utilizando o UseEffect para configurar o localStorage e o Tittle da página */}
       useEffect(()=>{
           localStorage.setItem('Key 4', JSON.stringify(Traduzir))
           localStorage.setItem('fun', JSON.stringify(Menu))
           localStorage.setItem('AlterarModo', JSON.stringify(Modos))
+          localStorage.setItem('key 5', JSON.stringify(Bolha))
           document.title = Traduzir? 'Complementar':'All'
           
       })
@@ -103,13 +109,13 @@ export default function Index(){
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>Hard Skills</h1>
           <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Avançado':'Advanced'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, Express.js, Windows, HTML, CSS</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Javascript, React.js, Vite.js, GitHub Express.js, Windows, HTML e CSS</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Intermediário':'Intermediary'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, React Router DOM, Node.js, Mysql, Git, Github, Excel Powerpoint e Word</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Typescript, Filmora, Linux (Ubuntu e Fedora), Electron.js, Next.js, Nextron.js, React Router DOM, Node.js, Mysql, Git, Excel, Powerpoint e Word</p>
             <hr />
             <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Básico':'Basic'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, Linux, Python</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>Power BI, English, AWS DATA LAKE, Neon Serverless e Python</p>
           </ul> 
         <hr />
 
@@ -140,7 +146,7 @@ export default function Index(){
 
         {/* Sessão que fala sobre os cursos técnicos que o candidato possue */}
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Cursos Extracurrículares':'extracurricular courses'}</h1>
-        <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
+      <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Informática Básica':'Basic Computer Skills'}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Micromaker':'Institution: Micromaker'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Local: Carapicuíba': 'Location: Carapicuíba'}</p>
@@ -156,25 +162,52 @@ export default function Index(){
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Local: Osasco': 'Location: Osasco'}</p>
         <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Auxiliar administrativo':'Administrative Assistant'}</li>
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Auxiliar administrativo':'Administrative Assistant'}{<Link to={"/Certificados"}><button className={Modos? 'Bolha1Noturna':'Bolha1Diurna'} onClick={()=>SetBolha(!Bolha)}>{Traduzir? 'Ver mais':'Show more'}</button></Link>}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Link para a Credencial do curso:':'Link to the course credential'}{<a className={Modos? 'Credencial1Noturno':'Credencial1Diurno'} href='http://primecursos.com.br/confirma/'>{Traduzir?'Ir para a credencial':'Go to credentials'}</a>}</p>
+            <p className={Modos?'text2Noturno':'text2Diurno'}>{Traduzir?'Código de acesso: 21050-16459132':'access code: 21050-16459132'}{<img onClick={()=>{
+              const Copiar = '21050-16459132'
+              navigator.clipboard.writeText(Copiar); alert('Código copiado com sucesso!')
+            }} className='CopiarTexto' src='\escrevendo.png'></img>}</p>
         <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>HTML</li>
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>HTML{<Link to={"/Certificados"}><button className={Modos? 'Bolha1Noturna':'Bolha1Diurna'} onClick={()=>SetBolha(!Bolha)}>{Traduzir? 'Ver mais':'Show more'}</button></Link>}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Link para a Credencial do curso:':'Link to the course credential'}{<a className={Modos? 'Credencial1Noturno':'Credencial1Diurno'} href='http://primecursos.com.br/confirma/'>{Traduzir?'Ir para a credencial':'Go to credentials'}</a>}</p>
+            <p className={Modos?'text2Noturno':'text2Diurno'}>{Traduzir?'Código de acesso: 9946-16459132':'access code: 9946-16459132'}{<img onClick={()=>{
+              const Copiar = '9946-16459132'
+              navigator.clipboard.writeText(Copiar); alert('Código copiado com sucesso!')
+            }} className='CopiarTexto' src='\escrevendo.png'></img>}</p>
         <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>CSS</li>
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>CSS{<Link to={"/Certificados"}><button className={Modos? 'Bolha1Noturna':'Bolha1Diurna'} onClick={()=>SetBolha(!Bolha)}>{Traduzir? 'Ver mais':'Show more'}</button></Link>}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Link para a Credencial do curso:':'Link to the course credential'}{<a className={Modos? 'Credencial1Noturno':'Credencial1Diurno'} href='http://primecursos.com.br/confirma/'>{Traduzir?'Ir para a credencial':'Go to credentials'}</a>}</p>
+            <p className={Modos?'text2Noturno':'text2Diurno'}>{Traduzir?'Código de acesso: 10229-16459132':'access code: 10229-16459132'}{<img onClick={()=>{
+              const Copiar = '10229-16459132'
+              navigator.clipboard.writeText(Copiar); alert('Código copiado com sucesso!')
+            }} className='CopiarTexto' src='\escrevendo.png'></img>}</p>
+            
         <hr />
-          <li className={Modos? 'text4Noturno':'text4Diurno'}>Power BI</li>
+          <li className={Modos? 'text4Noturno':'text4Diurno'}>Power BI{<Link to={"/Certificados"}><button className={Modos? 'Bolha1Noturna':'Bolha1Diurna'} onClick={()=>SetBolha(!Bolha)}>{Traduzir? 'Ver mais':'Show more'}</button></Link>}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Instituição: Prime Cursos do Brasil':'Institution: Prime Courses of Brazil'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Link para a Credencial do curso:':'Link to the course credential'}{<a className={Modos? 'Credencial1Noturno':'Credencial1Diurno'} href='http://primecursos.com.br/confirma/'>{Traduzir?'Ir para a credencial':'Go to credentials'}</a>}</p>
+            <p className={Modos?'text2Noturno':'text2Diurno'}>{Traduzir?'Código de acesso: 21057-16459132':'access code: 21057-16459132'}{<img onClick={()=>{
+              const Copiar = '21057-16459132'
+              navigator.clipboard.writeText(Copiar); alert('Código copiado com sucesso!')
+            }} className='CopiarTexto' src='\escrevendo.png'></img>}</p>
+            <hr />
+            <li className={Modos? 'text4Noturno':'text4Diurno'}>AWS DATA LAKE: {<Link to={"/Certificados"}><button className={Modos? 'Bolha1Noturna':'Bolha1Diurna'} onClick={()=>SetBolha(!Bolha)}>{Traduzir? 'Ver mais':'Show more'}</button></Link>}</li>
+              <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Instuição: Alura':'institution: Alura'}</p>
+              <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Situação: Completo': 'Status: Complete'}</p>
+              <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Modalidade: 100% EAD':'Modality: 100% Online'}</p>
+              <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir? 'Link para a Credencial do curso:':'Link to the course credential'}{<a className={Modos? 'Credencial1Noturno':'Credencial1Diurno'} href='https://cursos.alura.com.br/formalCertificate/f90cc6f0-de68-4e41-a2a6-0b9e89843871'>{Traduzir?'Ir para a credencial':'Go to credentials'}</a>}</p>
         </ul>
         <hr />
 
@@ -189,6 +222,8 @@ export default function Index(){
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Cargo Pretendido':'Desired Position'}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Estágio em Ti (Podendo ser incluído em cotas PCD)':'IT Internship (May be included in quotas for people with disabilities)'}</p>
         </ul>
+        <hr />
+        <h5 className={Modos? 'AtualizacaoDiurna':'AtualizacaoNoturna'}>{Traduzir? 'Atualizado pela última vez em: 29/03/2026':  'Last updated on: 29/02/2026'}</h5>
       </main>
     </body>  
     </>

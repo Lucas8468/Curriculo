@@ -84,14 +84,14 @@ export default function Objetivo(){
 
          {/* Sessão que mostra os objetivos do candidato na corporação */}
         <h1 className={Modos? 'h1Noturno':'h1Diurno'}>{Traduzir?'Objetivo':'Objective'}</h1>
-        <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
+         <ul className={Modos? 'ul1Noturno':'ul1Diurno'}>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Apresentação':'Presentation'}</li>
             <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?`Gostaria de participar da equipe de colaboradores da empresa para ter um crescimento profissional junto com os colegas de trabalho, podendo dar o meu máximo para a instituição, e assim, evoluirmos profissionalmente juntos. 
             Tenho o foco de me especializar no desenvolvimento Web, sendo full-stack, mas também tendo noções de criação de aplicações`:`I would like to join the company's team of collaborators to experience professional growth alongside my colleagues, giving my best to the institution, and thus, evolving professionally together.
 
             My focus is to specialize in web development, being a full-stack developer, but also having knowledge of application creation.`}</p>
           <li className={Modos? 'text4Noturno':'text4Diurno'}>{Traduzir?'Cargo Pretendido':'Desired Position'}</li>
-            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Desenvolvedor Web':'Web developer'}</p>
+            <p className={Modos? 'text2Noturno':'text2Diurno'}>{Traduzir?'Estágio em Ti (Podendo ser incluído em cotas PCD)':'IT Internship (May be included in quotas for people with disabilities)'}</p>
         </ul>
     </main>
     </body>  

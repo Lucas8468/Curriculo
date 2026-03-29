@@ -9,6 +9,7 @@ import Objetivo from './Objetivo'
 import Index from './Index'
 import NotFound from './NotFound'
 import CursosExtracurriculares from './CursosExtracurriculares'
+import Certificados from './Certificados'
 
 
 export default function App(){
@@ -24,6 +25,7 @@ export default function App(){
             <Route path='/Academico' element={<Academico/>}/>
             <Route path='/Objetivo' element={<Objetivo/>}/>
             <Route path='/CursosExtracurriculares' element={<CursosExtracurriculares/>}/>
+            <Route path='/Certificados' element={<Certificados/>} />
             <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
