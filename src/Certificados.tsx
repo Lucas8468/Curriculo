@@ -20,64 +20,50 @@ export default function Certificados() {
     localStorage.setItem('fun', JSON.stringify(Menu));
     localStorage.setItem('AlterarModo', JSON.stringify(Modos));
     document.title = Traduzir ? 'Certificados' : 'Certificates';
-  }, [Menu, Modos, Traduzir]);
 
-  return (
-    <div className={Modos ? 'BackFotosNoturno' : 'BackFotosDiurno'} style={{ minHeight: '100vh' }}>
-      {/* Botão do Menu */}
-      <button 
-        style={{ border: Modos ? 'solid white 1px' : 'solid black 1px' }} 
-        className="buttonMenu" 
-        onClick={() => setMenu(!Menu)}
-      >
-        <img className="Menu" src="/menu-hamburguer.png" alt="Menu Hamburguer" />
-      </button>
+    if (Modos) {
+        document.body.style.backgroundColor = "#0f313b";
+    } else {
+        document.body.style.backgroundColor = "#01647d";
+    }
 
-      {/* Navbar Lateral */}
-      <div style={{ backgroundColor: Modos ? '#0f313b' : '#01647d' }} className={Menu ? 'NavbarVertical1' : 'NavbarVertical2'}>
-        {Menu && <h1 className={Modos ? 'h1ConfigNoturno' : 'h1ConfigDiurno'}>{Traduzir ? 'Configurações' : 'Settings'}</h1>}
-        {Menu && <button style={{ marginLeft: Traduzir ? '' : '-90px' }} className='ButtonTradutor' onClick={() => setTraduzir(!Traduzir)} type='button'>{Traduzir ? 'Inglês' : 'Português'}</button>}
-        {Menu && <button className="ButtonModos" onClick={() => setModos(!Modos)}>{Traduzir ? 'Alterar tema' : 'change theme'}</button>}
+}, [Menu, Modos, Traduzir]);
+
+return(
+  <>
+  <div>
+        <button style={{border: Modos? 'solid white 1px': 'solid black 1px'}} className="buttonMenu" onClick={()=>setMenu(!Menu)}>
+           <img className="Menu" src="/menu-hamburguer.png" alt="Menu Hamburguer"/>
+        </button>
+        <div style={{backgroundColor: Modos? '#0f313b':'#01647d'}} className={Menu? 'NavbarVertical1':'NavbarVertical2'}>
+            {Menu?<h1 className={Modos? 'h1ConfigNoturno':'h1ConfigDiurno'}>{Traduzir? 'Configurações': 'Settings'}</h1>: null}
+            {Menu?<button style={{marginLeft: Traduzir? '':'-90px'}} className='ButtonTradutor' onClick={()=>setTraduzir(!Traduzir)} type='button'>{Traduzir?'Inglês':'Português'}</button>: null}
+            {Menu?<button className="ButtonModos" onClick={()=>setModos(!Modos)}>{Traduzir? 'Alterar tema': 'change theme'}</button>:null}
+        </div>
       </div>
 
-      {/* Conteúdo dos Certificados */}
-      <div style={{ textAlign: 'center', padding: '20px' }}>
-        
-        <section>
-          <h1 className={Modos ? 'h1FotosDiurno' : 'h1FotosNoturno'}>Alura AWS</h1>
-          <img className={Modos ? 'ImgFotosDiurno' : 'ImgFotosNoturno'} src="/Captura de tela 2026-03-27 052953.png" alt="" />
-          <img className={Modos ? 'ImgFotosDiurno3' : 'ImgFotosNoturno3'} src="/Captura de tela 2026-03-29 064259.png" alt="" />
-          <hr />
-        </section>
-
-        <section>
-          <h1 className={Modos ? 'h1FotosDiurno' : 'h1FotosNoturno'}>Power BI</h1>
-          <img className={Modos ? 'ImgFotosDiurno' : 'ImgFotosNoturno'} src="/Captura de tela 2026-03-29 073240.png" alt="" />
-          <img className={Modos ? 'ImgFotosDiurno2' : 'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 073449.png" alt="" />
-          <hr />
-        </section>
-
-        <section>
-          <h1 className={Modos ? 'h2FotosDiurno' : 'h2FotosNoturno'}>CSS (Cascading Style Sheets)</h1>
-          <img className={Modos ? 'ImgFotosDiurno' : 'ImgFotosNoturno'} src="/Captura de tela 2026-03-29 075304.png" alt="" />
-          <img className={Modos ? 'ImgFotosDiurno2' : 'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 075312.png" alt="" />
-          <hr />
-        </section>
-
-        <section>
-          <h1 className={Modos ? 'h3FotosDiurno' : 'h3FotosNoturno'}>HTML</h1>
-          <img className={Modos ? 'ImgFotosDiurno' : 'ImgFotosNoturno'} src="/Captura de tela 2026-03-29 080103.png" alt="" />
-          <img className={Modos ? 'ImgFotosDiurno2' : 'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 080112.png" alt="" />
-          <hr />
-        </section>
-
-        <section>
-          <h1 className={Modos ? 'h2FotosDiurno' : 'h2FotosNoturno'}>Auxiliar Administrativo</h1>
-          <img className={Modos ? 'ImgFotosDiurno' : 'ImgFotosNoturno'} src="/Captura de tela 2026-03-29 080642.png" alt="" />
-          <img className={Modos ? 'ImgFotosDiurno2' : 'ImgFotosNoturno2'} src="/Captura de tela 2026-03-29 080649.png" alt="" />
-        </section>
-
-      </div>
-    </div>
-  );
-}
+  <h1 className={Modos? 'h1FotosNoturno': 'h1FotosDiurno'}>Alura AWS</h1>
+  <img className={Modos? 'ImgFotosDiurno':'ImgFotosNoturno'} src="/cert-1.png.png" alt="" />
+  <img className={Modos? 'ImgFotosNoturno3':'ImgFotosDiurno3'} src="/certi-1.png.png" alt="" />
+  <hr />
+  <h1 className={Modos? 'h2FotosNoturno': 'h2FotosDiurno'}>CSS (Cascading Style Sheets)</h1>
+  <br /><br /><br /><br /><br />
+  <img className={Modos?'ImgFotosNoturno2':'ImgFotosDiurno2'} src="/css-f.png" alt="" />
+  <img  className={Modos? 'ImgFotosNoturno1':'ImgFotosDiurno1'} src="/certi-2.png.png" alt="" />
+  <hr />
+  <h1 className={Modos? 'h1FotosNoturno': 'h1FotosDiurno'}>Power BI</h1>
+  <br /><br /><br /><br /><br />
+  <img className={Modos? 'ImgFotosNoturno3D':'ImgFotosDiurno3D'} src="/power-bi1.png" alt="" />
+  <img className={Modos? 'ImgFotosNoturno3E':'ImgFotosDiurno3E'} src="/power-bi2.png" alt="" />
+  <hr />
+  <h1 className={Modos? 'h3FotosNoturno': 'h3FotosDiurno'}>HTML</h1>
+  <br /><br /><br /><br /><br />
+  <img className={Modos? 'ImgFotosNoturno4':'ImgFotosDiurno4D'} src="/cert-4.png.png" alt="" />
+  <img className={Modos? 'ImgFotosNoturno4e':'ImgFotosDiurno4e'} src="/certi-4.png.png" alt="" />
+  <hr />
+  <h1 className={Modos? 'h2FotosNoturno': 'h2FotosDiurno'}>Auxiliar Administrativo</h1>
+  <br /><br /><br /><br /><br />
+  <img className={Modos? 'ImgFotosNoturno5':'ImgFotosDiurno5e'} src="/cert-5.png.png" alt="" />
+  <img className={Modos? 'ImgFotosNoturno5':'ImgFotosDiurno5e'} src="/certi-5.png.png" alt="" />
+  </>
+)}
