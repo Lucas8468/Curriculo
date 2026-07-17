@@ -96,6 +96,9 @@ function swal(){
           <button accessKey='O' className='ButtonNavBar3' type='button'>{Traduzir ? 'Objetivo' : 'Objective'}
           </button>
         </Link>
+        <Link to="/Sobre">
+        <button accessKey='R' className='ButtonNavBar3' type='button'>{Traduzir ? 'Sobre' : 'Sobre'}</button>
+        </Link>
       </nav>
 
       {/* Conteúdo que contém todas as informações do currículo */}

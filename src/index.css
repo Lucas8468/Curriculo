@@ -35,9 +35,10 @@ body{
 /* Estilizando o color dos links */
 
 /* Estilizando o Botão do Menu das páginas */
-a.link{
-color: #01647d;
+a.link {
+  color: blue; /* Adicione uma cor e o sinal de ponto e vírgula */
 }
+
 a.visited{
 color: #01647d;
 }
@@ -773,4 +774,26 @@ border-radius: 30px;
     box-sizing: border-box;
     margin-bottom: 20px;
   }
+}
+::-webkit-scrollbar {
+  width: 10px; /* Largura para scroll vertical */
+  height: 10px; /* Altura para scroll horizontal */
+}
+
+/* 2. O trilho (fundo onde a barra corre) */
+::-webkit-scrollbar-track {
+  background: #014d61; /* Cor de fundo */
+  border-radius: 8px;
+}
+
+/* 3. O polegar (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #03aec5; /* Cor da barra */
+  border-radius: 8px;
+  border: 2px solid #f1f5f9; /* Cria um respiro entre a barra e o trilho */
+}
+
+/* 4. O polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #03aec5;
 }
